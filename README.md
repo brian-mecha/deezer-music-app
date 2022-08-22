@@ -1,46 +1,152 @@
-# Getting Started with Create React App
+# Deezer Music App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Deezer web app that explored the deezer database.
 
-## Available Scripts
+Hosted Link: [Deezer Music App](https://deezer-mecha.netlify.app/)
 
-In the project directory, you can run:
+## Technologies used
 
-### `yarn start`
+1. Yarn
+2. React JS
+3. Typescript
+4. Tailwind UI
+5. React Testing Library
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Setting up locally
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Clone the repo
+- `cd` into the project's folder: `cd deezer-music-app`
+- Install dependencies:  `yarn install`
+- Start the app: `yarn start`
 
-### `yarn test`
+App is now available at: [http://localhost:3000/](http://localhost:3000).
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Structure
+```
+├── README.md
+├── build
+│   ├── asset-manifest.json
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   ├── robots.txt
+│   └── static
+│       ├── css
+│       │   ├── main.124af387.css
+│       │   └── main.124af387.css.map
+│       └── js
+│           ├── 787.d6452b40.chunk.js
+│           ├── 787.d6452b40.chunk.js.map
+│           ├── main.68f878f5.js
+│           ├── main.68f878f5.js.LICENSE.txt
+│           └── main.68f878f5.js.map
+├── coverage
+│   ├── clover.xml
+│   ├── coverage-final.json
+│   ├── lcov-report
+│   │   ├── base.css
+│   │   ├── block-navigation.js
+│   │   ├── favicon.png
+│   │   ├── index.html
+│   │   ├── prettify.css
+│   │   ├── prettify.js
+│   │   ├── sort-arrow-sprite.png
+│   │   ├── sorter.js
+│   │   └── src
+│   │       ├── App.tsx.html
+│   │       ├── components
+│   │       │   ├── Album.tsx.html
+│   │       │   ├── Artist.tsx.html
+│   │       │   ├── Badge.tsx.html
+│   │       │   ├── NavBar.tsx.html
+│   │       │   ├── Navigation.tsx.html
+│   │       │   ├── Routes.tsx.html
+│   │       │   ├── Spinner.tsx.html
+│   │       │   ├── Track.tsx.html
+│   │       │   └── index.html
+│   │       ├── helpers
+│   │       │   ├── index.html
+│   │       │   └── useStateWithCallback.ts.html
+│   │       ├── index.html
+│   │       ├── index.tsx.html
+│   │       ├── pages
+│   │       │   ├── 404Page.tsx.html
+│   │       │   ├── ArtistDetailPage.tsx.html
+│   │       │   ├── HomePage.tsx.html
+│   │       │   └── index.html
+│   │       ├── reportWebVitals.ts.html
+│   │       └── stores
+│   │           ├── ApiService.ts.html
+│   │           ├── Artist
+│   │           │   ├── ArtistStore.ts.html
+│   │           │   └── index.html
+│   │           ├── RootStore.ts.html
+│   │           ├── StoreProvider.tsx.html
+│   │           └── index.html
+│   └── lcov.info
+├── node_modules  [815 entries exceeds filelimit, not opening dir]
+├── package.json
+├── postcss.config.js
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── logo192.png
+│   ├── logo512.png
+│   ├── manifest.json
+│   └── robots.txt
+├── src
+│   ├── App.css
+│   ├── App.tsx
+│   ├── components
+│   │   ├── Album.tsx
+│   │   ├── Artist.tsx
+│   │   ├── Badge.tsx
+│   │   ├── NavBar.tsx
+│   │   ├── Navigation.tsx
+│   │   ├── Routes.tsx
+│   │   ├── Spinner.tsx
+│   │   └── Track.tsx
+│   ├── helpers
+│   │   └── useStateWithCallback.ts
+│   ├── index.css
+│   ├── index.tsx
+│   ├── logo.svg
+│   ├── pages
+│   │   ├── 404Page.tsx
+│   │   ├── ArtistDetailPage.tsx
+│   │   └── HomePage.tsx
+│   ├── react-app-env.d.ts
+│   ├── reportWebVitals.ts
+│   ├── setupTests.ts
+│   ├── stores
+│   │   ├── ApiService.ts
+│   │   ├── Artist
+│   │   │   └── ArtistStore.ts
+│   │   ├── RootStore.ts
+│   │   └── StoreProvider.tsx
+│   └── tests
+│       ├── App.test.tsx
+│       ├── components
+│       │   ├── Album.test.tsx
+│       │   ├── Artist.test.tsx
+│       │   ├── NavBar.test.tsx
+│       │   ├── Navigation.test.tsx
+│       │   └── Track.test.tsx
+│       └── pages
+│           ├── 404Page.test.tsx
+│           ├── ArtistDetailPage.test.tsx
+│           └── HomePage.test.tsx
+├── tailwind.config.js
+├── tsconfig.json
+├── yarn-error.log
+└── yarn.lock
+```
 
-### `yarn build`
+## API reference
+This app cosumes data from a Node JS API that I made as a wrapper for the  Deezer API. It is housed [here](https://github.com/brian-mecha/deezer-music-api).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## App Screeshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Test Coverage
