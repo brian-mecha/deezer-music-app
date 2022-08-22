@@ -1,6 +1,6 @@
 # Deezer Music App
 
-This is a Deezer web app that explored the deezer database.
+This is a Deezer web app that explores the deezer database.
 
 Hosted Link: [Deezer Music App](https://deezer-mecha.netlify.app/)
 
@@ -20,6 +20,10 @@ Hosted Link: [Deezer Music App](https://deezer-mecha.netlify.app/)
 - Start the app: `yarn start`
 
 App is now available at: [http://localhost:3000/](http://localhost:3000).
+
+
+## API reference
+This app cosumes data from a Node JS API that I made as a wrapper for the  Deezer API. It is housed [here](https://github.com/brian-mecha/deezer-music-api).
 
 ## Project Structure
 ```
@@ -144,9 +148,19 @@ App is now available at: [http://localhost:3000/](http://localhost:3000).
 └── yarn.lock
 ```
 
-## API reference
-This app cosumes data from a Node JS API that I made as a wrapper for the  Deezer API. It is housed [here](https://github.com/brian-mecha/deezer-music-api).
-
 ## App Screeshot
+### Landing Page
+
+<img width="1678" alt="Screenshot 2022-08-22 at 3 58 29 AM" src="https://user-images.githubusercontent.com/25217873/185821786-cce5eff0-53be-4977-a47d-ab86c2f4a04a.png">
+
+### Search
+![search_deezer](https://user-images.githubusercontent.com/25217873/185822321-3cd88737-87bf-4dcf-aaf9-f3205f7494f4.gif)
+
+### Artist Page
+![Screenshot 2022-08-22 at 4 32 13 AM](https://user-images.githubusercontent.com/25217873/185821931-7d05ada5-2830-43b1-a72b-9368e40df758.png)
+
+![Screenshot 2022-08-22 at 4 32 34 AM](https://user-images.githubusercontent.com/25217873/185821950-dff95b68-b3d5-489e-a89d-5e2e02bdf086.png)
+
 
 ## Test Coverage
+<img width="1206" alt="Screenshot 2022-08-22 at 3 43 27 AM" src="https://user-images.githubusercontent.com/25217873/185821730-a6b7bba2-fa96-48d6-85c1-8e296cd5abf7.png">
